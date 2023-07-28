@@ -1,0 +1,63 @@
+.education_container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 5% 5% 10%;
+    background-color:black;
+}
+
+.edu_summary{
+    width:94%;
+}
+
+.edu_summary_raw{
+    width: 100%;
+    display: flex;
+}
+
+.edu_summary_column{
+    width:33.33%;
+}
+
+.icon2{
+    background-color: black;
+    border:none;
+    width:70px;
+    margin-left: 40%;
+}
+
+.icon3{
+    background-color: black;
+    border:none;
+    width:40px;
+    margin-left:40%;
+}
+
+.summary_heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:22px;
+    text-align: center;
+}
+
+.summary_description{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:26px;
+    text-align: center;
+}
+
+.summary_time{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:18px;
+    text-align: center;
+}
+
+/*
+
+.education_description{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20px;
+    line-height: 35px;
+    padding-left: 40%;
+    padding-bottom:5%;
+}
+
+*/

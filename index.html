@@ -1,76 +1,363 @@
 <!DOCTYPE html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Asanka Rukshan Rathnayake">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+
         <title>Asanka Rukshan Rathnayake</title>
 
-        <meta charset="UTF-8">
-        <meta name="keywords" content="Asanka, Rukshan, Rathnayake">
-        <meta name="description" content="Asanka Rukshan Rathnayake">
-        <meta name="author" content="Asanka Rukshan Rathnayake">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" type="text/css"  rel="stylesheet">
+        <link href="css/header.css" type="text/css"  rel="stylesheet">
+        <link href="css/mainview.css" type="text/css"  rel="stylesheet">
+        <link href="css/bio.css" type="text/css"  rel="stylesheet">
+        <link href="css/education.css" type="text/css"  rel="stylesheet">
+        <link href="css/skills.css" type="text/css"  rel="stylesheet">
+        <link href="css/projects.css" type="text/css"  rel="stylesheet">
+        <link href="css/contact.css" type="text/css"  rel="stylesheet">
 
-        <link type="text/css" href="css/styles.css" rel="stylesheet">
-        <link type="text/css" href="css/background.css" rel="stylesheet">
+        <script src="js/scroll.js"></script>
+        
     </head>
 
     <body>
-        <div class="index_main_container">
+        <div class="main_container">
 
-            <div class="header_container">
-                
-                <div class="header">
+            <!--HEADER-->
 
-                    <div class="mylogo">
-                        
-                        <a href="index.html" class="normal_link">
-                            <div class="name">
-                                Asanka Rukshan Rathnayake
-                            </div>
-        
-                            <div class="proffession">
-                                S o f t w a r e &nbsp; E n g i n e e r
-                            </div>
-                        </a>
+            <div class="header">
+                <a href="index.html#bio" class="navigation_link">ABOUT</a>
+                <a href="index.html#education" class="navigation_link">EDUCATION</a>
+                <a href="index.html#skills" class="navigation_link">SKILLS</a>
+                <a href="index.html#projects" class="navigation_link">WORK</a>
+                <a href="index.html#contact" class="navigation_link">CONTACT</a>
+            </div>
+
+            <!--MAIN VIEW-->
+
+            <div class="main_view_container">
+                    <div class="greeting">
+                        <p>Hello there!</p>
+                        <p>I'm Asanka.</p>
+                    </div>
+    
+                    <div class="first_introduction">
+                        <p>I am a passionate and creative software engineering undergraduate on a mission to turn ideas into reality through elegant and efficient code.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Top to bottom scroll button-->
+
+            <div>
+                <button onclick="scrollToBottom()" class="top_to_bottom icon">
+                    <img src="icons/down.png" alt="">
+                </button>
+
+                <script>
+                    function scrollToBottom() {
+                    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+                    }
+                </script>
+            </div>
+
+            <!--Bio data-->
+
+            <div class="bio_container">
+
+                <div class="bio_intro">
+                    <p class="bio_intro_heading">
+                        <a name="bio">Who Am I?</a>
+                    </p>
+
+                    <p class="bio_intro_description">
+                        At heart, I'm a problem solver and a lifelong learner. 
+                        With a background in Business Engineering Applications, Health Informatics and Data Science,
+                         I thrive on exploring new technologies and staying up-to-date with the latest industry trends. 
+                    </p>
+
+                    <p class="bio_intro_description">
+                        Whether it's crafting intuitive user interfaces, optimizing algorithms, or architecting scalable systems, 
+                        I find joy in every line of code I write.
+                    </p>
+                </div>
+
+            </div>
+
+            <!--education-->
+
+            <div class="education_container">
+
+                <div class="edu_summary">
+
+                    <div class="edu_summary_raw">
+
+                        <div class="edu_summary_column">
+                            <img src="icons/universityofkelaniyalogo.png" alt="" class="icon2">
+                        </div>
+
+                        <div class="edu_summary_column">
+                            <img src="icons/openuniversitylogo.png" alt="" class="icon2">
+                        </div>
+
+                        <div class="edu_summary_column">
+                            <img src="icons/royalcollegelogo.png" alt="" class="icon2">
+                        </div>
+
+                    </div>
+
+                    <div class="edu_summary_raw">
+
+                        <div class="edu_summary_column">
+                            <p class="summary_heading">
+                                University of Kelaniya
+                            </p>
+                            <p class="summary_description">BSc.(Hons) Software Engineering<br>Year-3</p>
+                            <p class="summary_time">2020-Today</p>
+                        </div>
+
+                        <div class="edu_summary_column">
+                            <p class="summary_heading">Open Univeristy of Sri Lanka</p>
+                            <p class="summary_description">Certificate in HRM</p>
+                            <p  class="summary_time">2019-2020</p>
+                        </div>
+
+                        <div class="edu_summary_column">
+                            <p  class="summary_heading">Royal College, Colombo</p>
+                            <p class="summary_description">Secondary Education</p>
+                            <p  class="summary_time">2011-2019</p>
+                        </div>
+
+                    </div>
                     
+                </div>
+
+                <!--
+
+                <div class="education_intro">
+                    <div class="uni_education_container">
+                        <div class="education_description">
+                            I'm currently pursuing a Bachelor of Science (Hons) degree in Software Engineering at University of Kelaniya.
+                            I thrive on the thrill of problem-solving and enjoy delving into various programming languages and technologies. 
+                            My goal is to continuously expand my knowledge and skills to become a proficient and versatile software engineer.
+                        </div>
+    
+                    </div>
+    
+                    <div class="higher_education_container">
+                        <div class="education_description">
+                            I hold a prestigious HRM certification from Open University of Sri Lanka, solidifying my expertise in Human Resource Management. 
+                            This certification showcases my comprehensive understanding of HR practices, talent acquisition, employee development, and organizational strategy.
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="school_education_container">
+                        <div class="education_description">
+                            Studying at Royal College - Colombo, Sri Lanka, was a transformative journey 
+                            that provided a strong academic foundation and nurtured my passion for learning.
+                        </div>
+    
                     </div>
 
-                    <div class="navigation_bar">
-                            
-                            <div class="navigation_button">
-                                <a href="work.html" class="navigation_link">WORK</a>
-                            </div>
-    
-                            <div class="navigation_button">
-                                <a href="blog.html" class="navigation_link">BLOG</a>
-                            </div>
-    
-                            <div class="navigation_button">
-                                <a href="about.html" class="navigation_link">ABOUT</a>
-                            </div>
-    
-                            <div class="navigation_button">
-                                <a href="contact.html" class="navigation_link">CONTACT</a>
-                            </div>
+                </div>
+
+            -->
+
+            </div>
+
+            <!--skills-->
+
+            <div class="skills_container">
+
+                <div class="skills">
+
+                    <div class="skills_raw">
+                        <div class="skills_column">
+                            <img src="icons/html.png" alt="" class="icon2">
+                        </div>
+                        <div class="skills_column">
+                            <img src="icons/css.png" alt="" class="icon2">
+                        </div>
+                        <div class="skills_column">
+                            <img src="icons/js.png" alt="" class="icon2">
+                        </div>
+                        <div class="skills_column">
+                            PHP
+                        </div>
+                    </div>
+
+                    <div class="skills_raw">
+                        <div class="skills_column" style="color: gold;">
+                            Excellent
+                        </div>
+                        <div class="skills_column" style="color: gold;">
+                            Excellent
+                        </div>
+                        <div class="skills_column" style="color:olive">
+                            Average
+                        </div>
+                        <div class="skills_column" style="color:silver">
+                            Good
+                        </div>
+                    </div>
+
+                    <div class="skills_raw">
+                        <div class="skills_column">
+                            C
+                        </div>
+                        <div class="skills_column">
+                            Java
+                        </div>
+                        <div class="skills_column">
+                            Python
+                        </div>
+                        <div class="skills_column">
+                            React
+                        </div>
+                    </div>
+
+                    <div class="skills_raw">
+                        <div class="skills_column" style="color: gold;">
+                            Excellent
+                        </div>
+                        <div class="skills_column" style="color:silver">
+                            Good
+                        </div>
+                        <div class="skills_column"  style="color:olive">
+                            Average
+                        </div>
+                        <div class="skills_column"  style="color:olive">
+                            Average
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--projects-->
+
+            <div class="project_container">
+
+
+                <div class="projects_intro">
+                    <p class="projects_intro_heading">
+                        What do I do?
+                    </p>
+
+                    <p class="projects_intro_description">
+                        As a software engineer, I've had the pleasure of working on diverse projects, ranging from web applications
+                         to backend systems and beyond. My passion lies in tackling challenges head-on, collaborating with teams,
+                         and creating solutions that push the boundaries of what's possible.
+                    </p>
+
+                </div>
+
+                <div>
+                    <div class="single_project_container">
+                        <div class="project_image_container">
+                            <img src="images/royalagro.png" alt="" class="project_image">
+                        </div>
+
+                        <div class="project_description_container">
+                            <p class="project_heading">
+                                Royal Agro
+                            </p>
+
+                            <p class="project_description">
+                                Website for an Agricultural Company with HTML and CSS
+                            </p>
+
+                            <a href="https://asankarukshanrathnayake.github.io/RoyalAgro/html/home.html" target="_blank">
+                                <img src="icons/view.png" alt="" class="icon4">
+                            </a>
+
+                            <a href="https://asankarukshanrathnayake.github.io/RoyalAgro/html/home.html" target="_blank">
+                                <img src="icons/github.png" alt="" class="icon4">
+                            </a>
+                        </div>
 
                     </div>
 
-                    <div class="navigation_icons_bar">
-                            
-                        <a href="underconstruction.html">
-                            <img src="icons/youtube.png" alt="" class="navigation_icon">
-                        </a>
 
-                        <a href="underconstruction.html">
-                            <img src="icons/facebook.png" alt="" class="navigation_icon">
-                        </a>
+                    <div class="single_project_container" style="float: right;">
+                        <div class="project_image_container">
+                            <img src="images/royalagro.png" alt="" class="project_image">
+                        </div>
+
+                        <div class="project_description_container">
+                            <p class="project_heading">
+                                Royal Agro
+                            </p>
+
+                            <p class="project_description">
+                                Website for an Agricultural Company with HTML and CSS
+                            </p>
+
+                            <a href="https://asankarukshanrathnayake.github.io/RoyalAgro/html/home.html" target="_blank">
+                                <img src="icons/view.png" alt="" class="icon4">
+                            </a>
+
+                            <a href="https://asankarukshanrathnayake.github.io/RoyalAgro/html/home.html" target="_blank">
+                                <img src="icons/github.png" alt="" class="icon4">
+                            </a>
+                        </div>
 
                     </div>
+
+
+                    <div class="single_project_container" style="float:left">
+                        <div class="project_image_container">
+                            <img src="images/royalagro.png" alt="" class="project_image">
+                        </div>
+
+                        <div class="project_description_container">
+                            <p class="project_heading">
+                                Royal Agro
+                            </p>
+
+                            <p class="project_description">
+                                Website for an Agricultural Company with HTML and CSS
+                            </p>
+
+                            <a href="https://asankarukshanrathnayake.github.io/RoyalAgro/html/home.html" target="_blank">
+                                <img src="icons/view.png" alt="" class="icon4">
+                            </a>
+
+                            <a href="https://asankarukshanrathnayake.github.io/RoyalAgro/html/home.html" target="_blank">
+                                <img src="icons/github.png" alt="" class="icon4">
+                            </a>
+                        </div>
+
+                    </div>
+
 
                 </div>
 
             </div>
 
-        </div>
+            <div>
 
+                <button onclick="scrollToTop()" class="bottom_to_top icon">
+                    <img src="icons/up.png" alt="" class="icon">
+                </button>
+
+                <script>
+                    function scrollToTop() {
+                    // Scroll to the top of the page with smooth animation
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                    }
+                </script>
+                
+            </div>
+
+            <div class="social_media_container">
+                <div class="social_media">
+                    <p>This is contacts</p>
+                </div>
+            </div>
+
+        </div>
     </body>
 
 </html>
